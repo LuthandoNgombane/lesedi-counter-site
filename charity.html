@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join Lesedi Life Holdings' Charity Golf Day to support underprivileged families in South Africa with funeral and grocery expenses. Before, Beside & Behind You.">
+    <meta name="keywords" content="charity golf day, Lesedi Life Holdings, charity events, South Africa, Kroonstad, Free State, community support, funeral support, grocery support">
+    <meta name="author" content="Lesedi Life Holdings">
+    <meta name="robots" content="index, follow">
+    <!-- Open Graph Tags for Social Media -->
+    <meta property="og:title" content="Lesedi Life Holdings - Charity Golf Day">
+    <meta property="og:description" content="Join our Charity Golf Day to support underprivileged families with funeral and grocery expenses in South Africa.">
+    <meta property="og:image" content="https://lesedilife.co.za/images/lesedi-life-logo.png">
+    <meta property="og:url" content="https://lesedilife.co.za/charity.html">
+    <meta property="og:type" content="website">
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Lesedi Life Holdings - Charity Golf Day">
+    <meta name="twitter:description" content="Join our Charity Golf Day to support underprivileged families with funeral and grocery expenses in South Africa.">
+    <meta name="twitter:image" content="https://lesedilife.co.za/images/lesedi-life-logo.png">
+    <meta name="twitter:site" content="@LesediLife">
+    <!-- Structured Data (JSON-LD) for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Event",
+        "name": "Lesedi Life Charity Golf Day",
+        "startDate": "2025-06-14T08:00:00+02:00",
+        "endDate": "2025-06-14T18:00:00+02:00",
+        "location": {
+            "@type": "Place",
+            "name": "Kroonstad Golf Club",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Kroonstad",
+                "addressRegion": "Free State",
+                "addressCountry": "South Africa"
+            }
+        },
+        "organizer": {
+            "@type": "Organization",
+            "name": "Lesedi Life Holdings",
+            "url": "https://lesedilife.co.za",
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+27-72-504-4806",
+                "contactType": "Customer Service",
+                "email": "info@lesedilife.co.za"
+            }
+        },
+        "description": "A charity golf day to raise funds for underprivileged families, supporting funeral and grocery expenses in South Africa.",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "ZAR",
+            "availability": "https://schema.org/InStock"
+        }
+    }
+    </script>
+    <title>Lesedi Life Holdings - Charity Golf Day</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bradley+Hand+ITC:wght@400&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .bradley-hand {
+            font-family: 'Bradley Hand ITC', cursive;
+        }
+        .bg-gradient {
+            background: linear-gradient(135deg, #FFD700 0%, #4B0082 100%);
+        }
+        .bg-gradient-reverse {
+            background: linear-gradient(135deg, #4B0082 0%, #FFD700 100%);
+        }
+        .bg-gold {
+            background-color: #FFD700;
+        }
+        .text-dark-blue {
+            color: #4B0082;
+        }
+        .bg-dark-blue {
+            background-color: #4B0082;
+        }
+        .section-container {
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            color: #4B0082;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .section-container:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .section-container-gradient {
+            background: linear-gradient(135deg, #FFD700 0%, #4B0082 100%);
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            color: white;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .section-container-gradient:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .section-image {
+            max-width: 300px;
+            margin: 1rem auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .benefit-icon {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+        .highlight-box {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            border-radius: 10px;
+            background-color: rgba(255, 215, 0, 0.2);
+        }
+        /* Hero Section */
+        .hero-image-container {
+            position: relative;
+            width: 100%;
+            height: 500px;
+            margin: 2rem auto;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+        .hero-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.5), rgba(75, 0, 130, 0.5));
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+        /* Fade-in Animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 1s ease-in forwards;
+        }
+        .fade-in:nth-child(1) { animation-delay: 0.2s; }
+        .fade-in:nth-child(2) { animation-delay: 0.4s; }
+        .fade-in:nth-child(3) { animation-delay: 0.6s; }
+        .fade-in:nth-child(4) { animation-delay: 0.8s; }
+        /* Form Styling */
+        .form-input {
+            border: 2px solid #4B0082;
+            border-radius: 8px;
+            padding: 0.5rem;
+            width: 100%;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+        .form-input:focus {
+            border-color: #FFD700;
+            box-shadow: 0 0 8px rgba(255, 215, 0, 0.3);
+            outline: none;
+        }
+        .form-label {
+            color: #4B0082;
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+        .form-button {
+            background-color: #4B0082;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, transform 0.1s ease;
+        }
+        .form-button:hover {
+            background-color: #FFD700;
+            color: #4B0082;
+            transform: scale(1.05);
+        }
+        /* Sticky Contact Button for Mobile */
+        .sticky-contact {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #FFD700;
+            color: #4B0082;
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            transition: transform 0.3s ease;
+        }
+        .sticky-contact:hover {
+            transform: scale(1.1);
+        }
+        /* Creative Background Patterns */
+        .bg-pattern-light {
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill='%23FFD700' fill-opacity='0.1'%3E%3Cpath d='M0 0h40v40H0z'/%3E%3Cpath d='M20 20l10 10-10 10-10-10z'/%3E%3C/g%3E%3C/svg%3E");
+        }
+        .bg-pattern-dark {
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill='%234B0082' fill-opacity='0.1'%3E%3Cpath d='M0 0h40v40H0z'/%3E%3Cpath d='M20 20l10 10-10 10-10-10z'/%3E%3C/g%3E%3C/svg%3E");
+        }
+        .bg-pattern-golf {
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill='%23008000' fill-opacity='0.1'%3E%3Cpath d='M0 0h40v40H0z'/%3E%3Ccircle cx='20' cy='20' r='5'/%3E%3C/g%3E%3C/svg%3E");
+        }
+        /* Countdown Timer */
+        .countdown {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        .countdown div {
+            text-align: center;
+        }
+        .countdown span {
+            display: block;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #FFD700;
+        }
+        /* Gallery */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        .gallery-image {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+        .gallery-image:hover {
+            transform: scale(1.05);
+        }
+        /* Responsive Adjustments */
+        @media (max-width: 1024px) {
+            .hero-image-container {
+                height: 400px;
+            }
+            .hero-overlay {
+                font-size: 1.25rem;
+                padding: 1.5rem;
+            }
+            .section-container, .section-container-gradient {
+                padding: 1.5rem;
+            }
+            .section-image {
+                max-width: 250px;
+            }
+            h2 {
+                font-size: 1.75rem;
+            }
+            h3 {
+                font-size: 1.25rem;
+            }
+            p, ul li {
+                font-size: 0.95rem;
+                line-height: 1.5;
+            }
+            .countdown span {
+                font-size: 1.25rem;
+            }
+        }
+        @media (max-width: 768px) {
+            .hero-image-container {
+                height: 300px;
+            }
+            .hero-overlay {
+                font-size: 1rem;
+                padding: 1rem;
+            }
+            .section-container, .section-container-gradient {
+                padding: 1rem;
+            }
+            .section-image {
+                max-width: 200px;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+            h3 {
+                font-size: 1.1rem;
+            }
+            p, ul li {
+                font-size: 0.9rem;
+                line-height: 1.4;
+            }
+            .form-label {
+                font-size: 1rem;
+            }
+            .form-input {
+                padding: 0.4rem;
+            }
+            .form-button {
+                padding: 0.5rem 1rem;
+            }
+            .sticky-contact {
+                display: block;
+            }
+            .countdown span {
+                font-size: 1rem;
+            }
+            .gallery-image {
+                height: 120px;
+            }
+        }
+        @media (max-width: 480px) {
+            .hero-image-container {
+                height: 200px;
+            }
+            .hero-overlay {
+                font-size: 0.9rem;
+                padding: 0.75rem;
+            }
+            .section-image {
+                max-width: 150px;
+            }
+            h2 {
+                font-size: 1.25rem;
+            }
+            h3 {
+                font-size: 1rem;
+            }
+            p, ul li {
+                font-size: 0.85rem;
+                line-height: 1.3;
+            }
+            .form-label {
+                font-size: 0.9rem;
+            }
+            .form-input {
+                padding: 0.3rem;
+            }
+            .form-button {
+                padding: 0.4rem 0.8rem;
+            }
+            .footer-links {
+                font-size: 0.9rem;
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+            .footer-links a {
+                padding: 0.5rem;
+            }
+            .countdown span {
+                font-size: 0.85rem;
+            }
+            .gallery-image {
+                height: 100px;
+            }
+        }
+        /* Disable hover on touch devices */
+        @media (hover: none) {
+            .section-container:hover, .section-container-gradient:hover {
+                transform: none;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+            .form-button:hover {
+                background-color: #4B0082;
+                color: white;
+                transform: none;
+            }
+            .sticky-contact:hover {
+                transform: none;
+            }
+            .gallery-image:hover {
+                transform: none;
+            }
+        }
+        /* Mobile Menu Styles */
+        .mobile-menu {
+            display: none;
+        }
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                position: absolute;
+                top: 80px;
+                left: 0;
+                background: linear-gradient(135deg, #FFD700 0%, #4B0082 100%);
+                padding: 1rem;
+                z-index: 10;
+                opacity: 0;
+                transform: translateX(-100%);
+            }
+            .nav-links.active {
+                display: flex;
+                animation: slideIn 0.3s ease forwards;
+                opacity: 1;
+            }
+            .nav-links a {
+                padding: 0.75rem 0;
+                font-size: 1.1rem;
+            }
+            .mobile-menu {
+                display: block;
+                cursor: pointer;
+            }
+        }
+    </style>
+</head>
+<body class="bg-white text-dark-blue">
+    <!-- Navigation -->
+    <nav class="bg-gradient text-white py-4 shadow-lg relative">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="lesedi-logo.jpg" alt="Lesedi Life Holdings Logo" class="h-12 mr-4">
+                <div>
+                    <h1 class="text-2xl bradley-hand">Lesedi Life Holdings</h1>
+                    <p class="text-sm bradley-hand">Before, Beside & Behind You</p>
+                </div>
+            </div>
+            <div class="mobile-menu md:hidden">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </div>
+            <div class="nav-links md:flex md:space-x-4">
+                <a href="index.html" class="hover:underline font-semibold block md:inline-block py-2">Home</a>
+                <a href="about.html" class="hover:underline font-semibold block md:inline-block py-2">About Us</a>
+                <a href="services.html" class="hover:underline font-semibold block md:inline-block py-2">Services</a>
+                <a href="burial.html" class="hover:underline font-semibold block md:inline-block py-2">Burial & Grocery</a>
+                <a href="charity.html" class="hover:underline font-semibold block md:inline-block py-2">Charity</a>
+                <a href="contact.html" class="hover:underline font-semibold block md:inline-block py-2">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="py-12 bg-gray-50 bg-pattern-golf fade-in">
+        <div class="container mx-auto px-4">
+            <div class="hero-image-container">
+                <img src="https://images.unsplash.com/photo-1593093413048-2b5177b8f7d2" alt="Golf course with players, symbolizing the Charity Golf Day" class="hero-image">
+                <div class="hero-overlay">
+                    <h2 class="text-3xl bradley-hand">Join Our Charity Golf Day</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Charity Event Section -->
+    <section class="py-12 bg-gray-50 bg-pattern-light fade-in">
+        <div class="container mx-auto px-4">
+            <div class="section-container p-8">
+                <h2 class="text-3xl bradley-hand text-center mb-6">Lesedi Life Charity Golf Day</h2>
+                <img src="https://images.unsplash.com/photo-1587174486073-ae5e5cff23aa" alt="Golfers on a course during a charity event" class="section-image">
+                <p class="text-lg text-center mb-4">Saturday, 14 June 2025</p>
+                <p class="text-lg text-center mb-4">Kroonstad Golf Club, Free State</p>
+                <p class="text-lg text-center mb-4">Join us for a day of golf, giving, and community support. All proceeds will go towards helping underprivileged families with funeral and grocery expenses.</p>
+                <h3 class="text-2xl bradley-hand text-center mb-4">Event Highlights</h3>
+                <ul class="list-none list-inside mx-auto max-w-lg text-lg space-y-2">
+                    <li><svg class="benefit-icon" fill="none" stroke="#4B0082" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> 18-hole Golf Tournament</li>
+                    <li><svg class="benefit-icon" fill="none" stroke="#4B0082" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Charity Auction</li>
+                    <li><svg class="benefit-icon" fill="none" stroke="#4B0082" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Networking Dinner</li>
+                </ul>
+                <div class="countdown" id="countdown">
+                    <div><span id="days">0</span>Days</div>
+                    <div><span id="hours">0</span>Hours</div>
+                    <div><span id="minutes">0</span>Minutes</div>
+                    <div><span id="seconds">0</span>Seconds</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Past Events Gallery -->
+    <section class="py-12 bg-gradient bg-pattern-dark fade-in">
+        <div class="container mx-auto px-4">
+            <div class="section-container-gradient p-8">
+                <h2 class="text-3xl bradley-hand text-center mb-6">Past Charity Events</h2>
+                <p class="text-lg text-center mb-4">See the impact of our previous charity initiatives.</p>
+                <div class="gallery-grid">
+                    <img src="https://images.unsplash.com/photo-1593093413048-2b5177b8f7d2" alt="Past charity event 1" class="gallery-image">
+                    <img src="https://images.unsplash.com/photo-1587174486073-ae5e5cff23aa" alt="Past charity event 2" class="gallery-image">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Past charity event 3" class="gallery-image">
+                    <img src="https://images.unsplash.com/photo-1592323328478-530179138293" alt="Past charity event 4" class="gallery-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Form Section -->
+    <section class="bg-gray-50 bg-pattern-light py-12 text-center fade-in">
+        <div class="container mx-auto px-4">
+            <div class="section-container p-8">
+                <h3 class="text-2xl bradley-hand mb-4">Register for the Charity Golf Day</h3>
+                <p class="text-lg mb-6">Sign up to participate and support our cause.</p>
+                <div class="max-w-lg mx-auto">
+                    <div class="mb-4">
+                        <label for="name" class="form-label bradley-hand block">Name</label>
+                        <input type="text" id="name" name="name" class="form-input" placeholder="Your Name" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="form-label bradley-hand block">Email</label>
+                        <input type="email" id="email" name="email" class="form-input" placeholder="Your Email" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="team" class="form-label bradley-hand block">Team Name (Optional)</label>
+                        <input type="text" id="team" name="team" class="form-input" placeholder="Your Team Name">
+                    </div>
+                    <button type="button" class="form-button bradley-hand">Register Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark-blue text-white py-6">
+        <div class="container mx-auto px-4 text-center">
+            <p class="mb-2">Head Office: Kroonstad | Branches across Free State</p>
+            <div class="footer-links">
+                <p>Contact: <a href="tel:+27725044806" class="underline">+27 72 504 4806</a> | <a href="mailto:info@lesedilife.co.za" class="underline">info@lesedilife.co.za</a></p>
+                <p>Follow us on <a href="https://twitter.com/LesediLife" class="underline">Twitter</a></p>
+            </div>
+            <p class="mt-2">© 2025. Reticle Dev.</p>
+        </div>
+    </footer>
+
+    <!-- Sticky Contact Button for Mobile -->
+    <a href="tel:+27725044806" class="sticky-contact bradley-hand">Call Us</a>
+
+    <!-- Mobile Menu and Form JavaScript -->
+    <script>
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Form submission placeholder (for demo purposes)
+        document.querySelector('.form-button').addEventListener('click', () => {
+            const name = document.querySelector('#name').value;
+            const email = document.querySelector('#email').value;
+            const team = document.querySelector('#team').value;
+
+            if (name && email) {
+                alert('Thank you for registering! We will contact you with event details.');
+                document.querySelector('#name').value = '';
+                document.querySelector('#email').value = '';
+                document.querySelector('#team').value = '';
+            } else {
+                alert('Please fill out all required fields.');
+            }
+        });
+
+        // Countdown Timer
+        const eventDate = new Date('June 14, 2025 08:00:00 GMT+0200').getTime();
+        const countdown = setInterval(() => {
+            const now = new Date().getTime();
+            const distance = eventDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById('days').textContent = days;
+            document.getElementById('hours').textContent = hours;
+            document.getElementById('minutes').textContent = minutes;
+            document.getElementById('seconds').textContent = seconds;
+
+            if (distance < 0) {
+                clearInterval(countdown);
+                document.getElementById('countdown').innerHTML = '<p class="text-lg text-center">The event has started!</p>';
+            }
+        }, 1000);
+    </script>
+</body>
+</html>

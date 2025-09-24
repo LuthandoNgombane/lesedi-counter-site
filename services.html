@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Lesedi Life Holdings' compassionate funeral services in South Africa. From burial society plans to repatriation and memorial programs, we support families with dignity. Before, Beside & Behind You.">
+    <meta name="keywords" content="funeral services, South Africa, Lesedi Life Holdings, burial society, repatriation, memorial programs, coffins, cremations, tombstone design, grief support, Kroonstad, Free State, affordable funeral plans">
+    <meta name="author" content="Lesedi Life Holdings">
+    <meta name="robots" content="index, follow">
+    <!-- Open Graph Tags for Social Media -->
+    <meta property="og:title" content="Lesedi Life Holdings - Services">
+    <meta property="og:description" content="Explore our range of compassionate funeral services, including burial society plans, repatriation, and memorial programs, tailored to support South African families.">
+    <meta property="og:image" content="https://lesedilife.co.za/images/lesedi-life-logo.png">
+    <meta property="og:url" content="https://lesedilife.co.za/services.html">
+    <meta property="og:type" content="website">
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Lesedi Life Holdings - Services">
+    <meta name="twitter:description" content="Explore our range of compassionate funeral services, including burial society plans, repatriation, and memorial programs, tailored to support South African families.">
+    <meta name="twitter:image" content="https://lesedilife.co.za/images/lesedi-life-logo.png">
+    <meta name="twitter:site" content="@LesediLife">
+    <!-- Structured Data (JSON-LD) for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Lesedi Life Holdings",
+        "url": "https://lesedilife.co.za",
+        "logo": "https://lesedilife.co.za/images/lesedi-life-logo.png",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+27-72-504-4806",
+            "contactType": "Customer Service",
+            "email": "info@lesedilife.co.za"
+        },
+        "description": "Lesedi Life Holdings provides compassionate funeral services in South Africa, supporting families with dignity and care for nearly two decades.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Kroonstad",
+            "addressRegion": "Free State",
+            "addressCountry": "South Africa"
+        },
+        "sameAs": [
+            "https://twitter.com/LesediLife"
+        ]
+    }
+    </script>
+    <title>Lesedi Life Holdings - Services</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bradley+Hand+ITC:wght@400&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .bradley-hand {
+            font-family: 'Bradley Hand ITC', cursive;
+        }
+        .bg-gradient {
+            background: linear-gradient(135deg, #FFD700 0%, #4B0082 100%);
+        }
+        .bg-gradient-reverse {
+            background: linear-gradient(135deg, #4B0082 0%, #FFD700 100%);
+        }
+        .bg-gold {
+            background-color: #FFD700;
+        }
+        .text-dark-blue {
+            color: #4B0082;
+        }
+        .bg-dark-blue {
+            background-color: #4B0082;
+        }
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+        .hover-scale:hover {
+            transform: scale(1.05);
+        }
+        /* Large Image with Tagline */
+        .hero-image-container {
+            position: relative;
+            width: 100%;
+            height: 500px;
+            margin: 2rem auto;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+        .hero-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.5), rgba(75, 0, 130, 0.5));
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+        /* Single Column Layout with Z-Axis Rotation */
+        .services-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .service-card {
+            perspective: 1000px;
+            height: 350px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        .service-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.6s ease;
+            transform-style: preserve-3d;
+        }
+        .service-card:hover .service-card-inner {
+            transform: rotateY(180deg);
+        }
+        .service-card-front, .service-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .service-card-front {
+            background-color: white;
+        }
+        .service-card-back {
+            background: linear-gradient(135deg, #FFD700 0%, #4B0082 100%);
+            color: white;
+            transform: rotateY(180deg);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+        }
+        .service-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .service-card-content {
+            padding: 1rem;
+            text-align: center;
+        }
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .services-grid {
+                gap: 1rem;
+            }
+            .service-card {
+                height: 300px;
+            }
+            .service-card img {
+                height: 120px;
+            }
+            .service-card-content {
+                padding: 0.5rem;
+            }
+            .hero-image-container {
+                height: 300px;
+            }
+            .hero-overlay {
+                font-size: 1rem;
+            }
+        }
+        @media (max-width: 480px) {
+            .hero-image-container {
+                height: 200px;
+            }
+            .hero-overlay {
+                font-size: 0.9rem;
+            }
+            .service-card-back {
+                font-size: 0.9rem;
+            }
+        }
+        /* Mobile menu styles */
+        .mobile-menu {
+            display: none;
+        }
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                position: absolute;
+                top: 80px;
+                left: 0;
+                background: linear-gradient(135deg, #FFD700 0%, #4B0082 100%);
+                padding: 1rem;
+                z-index: 10;
+            }
+            .nav-links.active {
+                display: flex;
+            }
+            .mobile-menu {
+                display: block;
+                cursor: pointer;
+            }
+        }
+    </style>
+</head>
+<body class="bg-white text-dark-blue">
+    <!-- Navigation -->
+    <nav class="bg-gradient text-white py-4 shadow-lg relative">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="lesedi-logo.jpg" alt="Lesedi Life Holdings Logo" class="h-12 mr-4">
+                <div>
+                    <h1 class="text-2xl bradley-hand">Lesedi Life Holdings</h1>
+                    <p class="text-sm bradley-hand">Before, Beside & Behind You</p>
+                </div>
+            </div>
+            <div class="mobile-menu md:hidden">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </div>
+            <div class="nav-links md:flex md:space-x-4">
+                <a href="index.html" class="hover:underline font-semibold block md:inline-block py-2">Home</a>
+                <a href="about.html" class="hover:underline font-semibold block md:inline-block py-2">About Us</a>
+                <a href="services.html" class="hover:underline font-semibold block md:inline-block py-2">Services</a>
+                <a href="burial.html" class="hover:underline font-semibold block md:inline-block py-2">Burial</a>
+                <a href="charity.html" class="hover:underline font-semibold block md:inline-block py-2">Charity</a>
+                <a href="contact.html" class="hover:underline font-semibold block md:inline-block py-2">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Services Section -->
+    <section class="py-12 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <!-- Large Image with Tagline -->
+            <div class="hero-image-container">
+                <img src="https://images.unsplash.com/photo-1592323328478-530179138293" alt="Peaceful cemetery scene with flowers, symbolizing care and remembrance" class="hero-image">
+                <div class="hero-overlay">
+                    <h2 class="text-3xl bradley-hand md:text-2xl sm:text-xl">Comprehensive Care for Every Farewell</h2>
+                </div>
+            </div>
+            <h2 class="text-3xl bradley-hand text-center mb-8 md:text-2xl sm:text-xl">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <img src="https://images.unsplash.com/photo-1579379470181-6c876e2df331" alt="Professional funeral service with a coffin and flowers">
+                            <div class="service-card-content">
+                                <h3 class="text-xl bradley-hand mb-2 text-dark-blue md:text-lg sm:text-base">Funeral Services</h3>
+                                <p class="text-sm md:text-xs sm:text-xs">We provide comprehensive funeral services tailored to your needs, including coffins, cremations, and personalized memorial ceremonies.</p>
+                            </div>
+                        </div>
+                        <div class="service-card-back">
+                            <h3 class="text-xl bradley-hand mb-2 md:text-lg sm:text-base">Funeral Services</h3>
+                            <p class="text-sm md:text-xs sm:text-xs">Our services include arranging transportation, preparing the deceased with care, and coordinating with clergy or celebrants for a meaningful ceremony. We handle every detail with dignity and respect.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <img src="https://images.unsplash.com/photo-1593093413048-2b5177b8f7d2" alt="Grieving family walking through a cemetery during a funeral procession">
+                            <div class="service-card-content">
+                                <h3 class="text-xl bradley-hand mb-2 text-dark-blue md:text-lg sm:text-base">Burial Society</h3>
+                                <p class="text-sm md:text-xs sm:text-xs">Our Burial Society plans offer financial support and peace of mind, ensuring your loved ones are cared for during difficult times.</p>
+                            </div>
+                        </div>
+                        <div class="service-card-back">
+                            <h3 class="text-xl bradley-hand mb-2 md:text-lg sm:text-base">Burial Society</h3>
+                            <p class="text-sm md:text-xs sm:text-xs">Join our Burial Society for affordable monthly plans that cover funeral expenses, including burial plots and services. We provide support to ease the financial burden during times of loss.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <img src="https://images.unsplash.com/photo-1592323328478-530179138293" alt="Mourning woman placing flowers on a grave in a cemetery">
+                            <div class="service-card-content">
+                                <h3 class="text-xl bradley-hand mb-2 text-dark-blue md:text-lg sm:text-base">Repatriation</h3>
+                                <p class="text-sm md:text-xs sm:text-xs">We provide repatriation services to transport your loved ones to their final resting place, whether within South Africa or internationally.</p>
+                            </div>
+                        </div>
+                        <div class="service-card-back">
+                            <h3 class="text-xl bradley-hand mb-2 md:text-lg sm:text-base">Repatriation</h3>
+                            <p class="text-sm md:text-xs sm:text-xs">Our repatriation services include all necessary documentation, transportation logistics, and coordination with international authorities, ensuring a respectful and seamless process.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Candlelit memorial scene symbolizing remembrance">
+                            <div class="service-card-content">
+                                <h3 class="text-xl bradley-hand mb-2 text-dark-blue md:text-lg sm:text-base">Memorial Programs</h3>
+                                <p class="text-sm md:text-xs sm:text-xs">We offer personalized memorial programs, including tombstone design and grief support, to honor your loved one’s memory.</p>
+                            </div>
+                        </div>
+                        <div class="service-card-back">
+                            <h3 class="text-xl bradley-hand mb-2 md:text-lg sm:text-base">Memorial Programs</h3>
+                            <p class="text-sm md:text-xs sm:text-xs">Our memorial programs include custom tombstone design, memorial ceremonies, and grief counseling sessions to support families in creating a lasting tribute to their loved ones.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark-blue text-white py-6">
+        <div class="container mx-auto px-4 text-center">
+            <p class="md:text-sm sm:text-xs">Head Office: Kroonstad | Branches across Free State</p>
+            <p class="md:text-sm sm:text-xs">Contact: <a href="tel:+27725044806" class="underline">+27 72 504 4806</a> | <a href="mailto:info@lesedilife.co.za" class="underline">info@lesedilife.co.za</a></p>
+            <p class="mt-2 md:text-sm sm:text-xs">Follow us on <a href="https://twitter.com/LesediLife" class="underline">Twitter</a></p>
+            <p class="mt-2 md:text-sm sm:text-xs">© 2025. Reticle Dev.</p>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

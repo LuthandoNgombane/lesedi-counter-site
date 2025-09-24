@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Lesedi Life Holdings - Compassionate funeral services in South Africa. Our mission, vision, and values reflect nearly two decades of dignity and care. Before, Beside & Behind You.">
+    <meta name="keywords" content="funeral services, South Africa, Lesedi Life Holdings, burial society, charity events, compassionate care, funeral arrangements, grief support, Kroonstad, Free State, about us">
+    <meta name="author" content="Lesedi Life Holdings">
+    <meta name="robots" content="index, follow">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="lesedi-logo-icon.png" sizes="32x32">
+    <link rel="apple-touch-icon" href="lesedi-logo-icon.png" sizes="180x180">
+    <link rel="ms-icon" href="lesedi-logo-icon.png" sizes="150x150">
+    <!-- Open Graph Tags for Social Media -->
+    <meta property="og:title" content="Lesedi Life Holdings - About Us">
+    <meta property="og:description" content="Learn about Lesedi Life Holdings' mission, vision, and values. Compassionate funeral services in South Africa for nearly two decades.">
+    <meta property="og:image" content="https://lesedilife.co.za/images/lesedi-life-logo.png">
+    <meta property="og:url" content="https://lesedilife.co.za/about.html">
+    <meta property="og:type" content="website">
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Lesedi Life Holdings - About Us">
+    <meta name="twitter:description" content="Learn about Lesedi Life Holdings' mission, vision, and values. Compassionate funeral services in South Africa for nearly two decades.">
+    <meta name="twitter:image" content="https://lesedilife.co.za/images/lesedi-life-logo.png">
+    <meta name="twitter:site" content="@LesediLife">
+    <!-- Structured Data (JSON-LD) for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Lesedi Life Holdings",
+        "url": "https://lesedilife.co.za",
+        "logo": "https://lesedilife.co.za/images/lesedi-life-logo.png",
+        "description": "Lesedi Life Holdings provides compassionate funeral services in South Africa, supporting families with affordable funeral plans, burial society, grief support, memorial services, tombstone design, repatriation, and cremation services in Kroonstad, Free State, for nearly two decades.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Kroonstad",
+            "addressRegion": "Free State",
+            "addressCountry": "South Africa"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+27-72-504-4806",
+            "contactType": "Customer Service",
+            "email": "info@lesedilife.co.za"
+        },
+        "openingHours": "Mo-Fr 08:00-17:00",
+        "sameAs": [
+            "https://twitter.com/LesediLife",
+            "https://facebook.com/LesediLife",
+            "https://whatsapp.com/LesediLife",
+            "https://linkedin.com/company/LesediLife"
+        ],
+        "keywords": "funeral services, affordable funeral plans, burial society, grief support, memorial services, tombstone design, repatriation, cremation services, Kroonstad funeral services, Free State funeral homes"
+    }
+    </script>
+    <title>Lesedi Life Holdings - About Us</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bradley+Hand+ITC:wght@400&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Font Awesome for Social Media Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .bradley-hand {
+            font-family: 'Bradley Hand ITC', cursive;
+        }
+        .bg-gradient {
+            background: linear-gradient(135deg, #FFD700 0%, #4B0082 100%);
+        }
+        .bg-gradient-reverse {
+            background: linear-gradient(135deg, #4B0082 0%, #FFD700 100%);
+        }
+        .bg-gold {
+            background-color: #FFD700;
+        }
+        .text-dark-blue {
+            color: #4B0082;
+        }
+        .bg-dark-blue {
+            background-color: #4B0082;
+        }
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+        .hover-scale:hover {
+            transform: scale(1.05);
+        }
+        /* Section Containers */
+        .section-container {
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            color: #4B0082;
+        }
+        .section-container-gradient {
+            background: linear-gradient(135deg, #FFD700 0%, #4B0082 100%);
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            color: white;
+        }
+        /* Section Image */
+        .section-image {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            margin: 1.5rem auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            object-fit: cover;
+            aspect-ratio: 16 / 9;
+        }
+        /* Large Square Image with Overlay */
+        .hero-image-container {
+            position: relative;
+            width: 600px;
+            height: 600px;
+            margin: 1.5rem auto;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+        .hero-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.5), rgba(75, 0, 130, 0.5));
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+        /* Consistent Spacing for Section Elements */
+        .section-text {
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        /* Fade-in Animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 1s ease-in forwards;
+        }
+        .fade-in:nth-child(1) { animation-delay: 0.2s; }
+        .fade-in:nth-child(2) { animation-delay: 0.4s; }
+        .fade-in:nth-child(3) { animation-delay: 0.6s; }
+        .fade-in:nth-child(4) { animation-delay: 0.8s; }
+        /* Social Media Icons */
+        .social-icons a {
+            color: #ffffff;
+            transition: color 0.3s ease;
+        }
+        .social-icons a:hover {
+            color: #FFD700;
+        }
+        /* Sitemap Styles */
+        .sitemap-links a {
+            color: #ffffff;
+            transition: color 0.3s ease;
+        }
+        .sitemap-links a:hover {
+            color: #FFD700;
+        }
+        /* Responsive Adjustments */
+        @media (max-width: 1024px) {
+            .hero-image-container {
+                width: 100%;
+                height: 500px;
+            }
+        }
+        @media (max-width: 768px) {
+            .section-container, .section-container-gradient {
+                padding: 1rem;
+            }
+            .section-image {
+                max-width: 250px;
+            }
+            .hero-image-container {
+                width: 100%;
+                height: 400px;
+            }
+            .social-icons a {
+                font-size: 1rem;
+            }
+            .sitemap-links {
+                flex-direction: column;
+                space-y-2;
+            }
+        }
+        @media (max-width: 480px) {
+            .section-image {
+                max-width: 200px;
+            }
+            .hero-image-container {
+                height: 300px;
+            }
+            .hero-overlay {
+                font-size: 0.9rem;
+            }
+            .social-icons a {
+                font-size: 0.9rem;
+            }
+            .sitemap-links a {
+                font-size: 0.9rem;
+            }
+        }
+        /* Ensure images remain responsive in Desktop Mode on Mobile */
+        @media (max-width: 768px) and (min-width: 481px) {
+            .section-image {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+        /* Mobile Menu Styles */
+        .mobile-menu {
+            display: none;
+        }
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                position: absolute;
+                top: 80px;
+                left: 0;
+                background: linear-gradient(135deg, #FFD700 0%, #4B0082 100%);
+                padding: 1rem;
+                z-index: 10;
+            }
+            .nav-links.active {
+                display: flex;
+            }
+            .mobile-menu {
+                display: block;
+                cursor: pointer;
+            }
+        }
+    </style>
+</head>
+<body class="bg-white text-dark-blue">
+    <!-- Navigation -->
+    <nav class="bg-gradient text-white py-4 shadow-lg relative">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="lesedi-logo.jpg" alt="Lesedi Life Holdings Logo" class="h-12 mr-4" loading="lazy">
+                <div>
+                    <h1 class="text-2xl bradley-hand">Lesedi Life Holdings</h1>
+                    <p class="text-sm bradley-hand">Before, Beside & Behind You</p>
+                </div>
+            </div>
+            <div class="mobile-menu md:hidden">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </div>
+            <div class="nav-links md:flex md:space-x-4">
+                <a href="index.html" class="hover:underline font-semibold block md:inline-block py-2">Home</a>
+                <a href="about.html" class="hover:underline font-semibold block md:inline-block py-2">About Us</a>
+                <a href="services.html" class="hover:underline font-semibold block md:inline-block py-2">Services</a>
+                <a href="burial.html" class="hover:underline font-semibold block md:inline-block py-2">Burial</a>
+                <a href="charity.html" class="hover:underline font-semibold block md:inline-block py-2">Charity</a>
+                <a href="contact.html" class="hover:underline font-semibold block md:inline-block py-2">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Us Section -->
+    <section class="py-12 bg-gray-50 fade-in">
+        <div class="container mx-auto px-4">
+            <div class="section-container p-8 hover-scale">
+                <h2 class="text-3xl bradley-hand text-center mb-6 md:text-2xl sm:text-xl">About Us</h2>
+                <div class="hero-image-container">
+                    <img src="flowers.jpg" alt="Family holding hands in a peaceful park, symbolizing support and comfort" class="hero-image" loading="lazy">
+                    <div class="hero-overlay">
+                        <p class="text-lg bradley-hand md:text-base sm:text-sm">Supporting You with Dignity and Care</p>
+                    </div>
+                </div>
+                <img src="people-funeral-flowers.jpg" alt="Grieving family walking through a cemetery, showing support" class="section-image" loading="lazy">
+                <p class="text-lg text-center max-w-3xl mx-auto md:text-base sm:text-sm section-text">For nearly two decades, Lesedi Life Holdings has stood as a beacon of light and comfort for families across South Africa during their most delicate moments. Rooted in compassion, dignity, and excellence, our funeral services are tailored to support, guide, and honour the lives of those who have passed, while bringing comfort to those who remain.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision Statement Section -->
+    <section class="bg-gradient py-12 fade-in">
+        <div class="container mx-auto px-4">
+            <div class="section-container-gradient p-8 hover-scale">
+                <h2 class="text-3xl bradley-hand text-center mb-6 md:text-2xl sm:text-xl">Vision Statement</h2>
+                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Golden sunlight breaking through a dark sky, symbolizing hope" class="section-image" loading="lazy">
+                <p class="text-lg text-center max-w-3xl mx-auto md:text-base sm:text-sm section-text">To be South Africa’s most trusted and compassionate funeral service provider, bringing light and hope to families during their time of loss through excellence, integrity, and care.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Statement Section -->
+    <section class="py-12 bg-gray-50 fade-in">
+        <div class="container mx-auto px-4">
+            <div class="section-container p-8 hover-scale">
+                <h2 class="text-3xl bradley-hand text-center mb-6 md:text-2xl sm:text-xl">Mission Statement</h2>
+                <img src="church-service.jpg" alt="Professional funeral service with a coffin and flowers" class="section-image" loading="lazy">
+                <p class="text-lg text-center max-w-3xl mx-auto md:text-base sm:text-sm section-text">At Lesedi Life Holdings, we are committed to delivering professional, respectful, and heartfelt funeral services that honour life and support grieving families.</p>
+                <p class="text-lg text-center md:text-base sm:text-sm section-text">We aim to:</p>
+                <ul class="list-disc list-inside mx-auto max-w-lg mt-4 text-lg md:text-base sm:text-sm">
+                    <li>Serve with dignity and empathy</li>
+                    <li>Provide personalized, quality funeral packages</li>
+                    <li>Be present before, beside, and behind our clients—every step of the way</li>
+                    <li>Light homes and hearts through every service we offer</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values Section -->
+    <section class="bg-gradient py-12 fade-in">
+        <div class="container mx-auto px-4">
+            <div class="section-container-gradient p-8 hover-scale">
+                <h2 class="text-3xl bradley-hand text-center mb-6 md:text-2xl sm:text-xl">Core Values</h2>
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Candlelit memorial scene symbolizing dignity and compassion" class="section-image" loading="lazy">
+                <ul class="list-disc list-inside mx-auto max-w-lg text-lg md:text-base sm:text-sm section-text">
+                    <li><strong>Compassion:</strong> We treat every family with kindness and care</li>
+                    <li><strong>Excellence:</strong> We deliver services of the highest standard</li>
+                    <li><strong>Integrity:</strong> We uphold honesty and respect in every interaction</li>
+                    <li><strong>Support:</strong> We walk with our clients from the first call to the final farewell</li>
+                    <li><strong>Dignity:</strong> We honour every life with the respect it deserves</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark-blue text-white py-6">
+        <div class="container mx-auto px-4 text-center">
+            <p class="md:text-sm sm:text-xs">Head Office: Kroonstad | Branches across Free State</p>
+            <p class="md:text-sm sm:text-xs">Contact: <a href="tel:+27725044806">+27 72 504 4806</a> | <a href="mailto:info@lesedilife.co.za">info@lesedilife.co.za</a></p>
+            <div class="social-icons mt-2 flex justify-center space-x-4">
+                <a href="https://facebook.com/LesediLife" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook-f text-xl"></i>
+                </a>
+                <a href="https://twitter.com/LesediLife" target="_blank" aria-label="Twitter">
+                    <i class="fab fa-twitter text-xl"></i>
+                </a>
+                <a href="https://whatsapp.com/LesediLife" target="_blank" aria-label="WhatsApp">
+                    <i class="fab fa-whatsapp text-xl"></i>
+                </a>
+                <a href="https://linkedin.com/company/LesediLife" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in text-xl"></i>
+                </a>
+            </div>
+            <div class="sitemap-links mt-4 flex justify-center space-x-4 md:space-x-6">
+                <a href="index.html" class="md:text-sm sm:text-xs">Home</a>
+                <a href="about.html" class="md:text-sm sm:text-xs">About Us</a>
+                <a href="services.html" class="md:text-sm sm:text-xs">Services</a>
+                <a href="burial.html" class="md:text-sm sm:text-xs">Burial</a>
+                <a href="charity.html" class="md:text-sm sm:text-xs">Charity</a>
+                <a href="contact.html" class="md:text-sm sm:text-xs">Contact</a>
+            </div>
+            <p class="mt-4 md:text-sm sm:text-xs">© 2025. Reticle Dev.</p>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu JavaScript -->
+    <script defer>
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
